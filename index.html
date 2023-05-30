@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+
+    
+
+</head>
+
+<body>
+    <header>
+        <div class="res">
+            <img src="https://freesvg.org/img/chef-restaurant-logo-publicdomainvectors.png" width="100" height="100">
+            <h1>Restaurant</h1>
+
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Order Online</a></li>
+                <li><a href="">Menu</a></li>
+            </ul>
+            <input class="search" type="text" placeholder="Search"> </input>
+        </div>
+
+    </header>
+    <main>
+       
+        <div class="both">
+
+
+            <div class="description">
+                <h2>To add a new food to the menu :</h2>
+                <p class="required">
+                    please fill the form by entering the required information
+                </p>
+            </div>
+            <div>
+                <form id="form">
+                    <label for="foodName">Food Name: </label>
+                    <input id="Name" type="text" name="name"><br />
+                    <br />
+                    <label for="price">Price: </label>
+                    <input id="price" type="text" name="price" placeholder="JD"><br />
+                    <br />
+
+                    <select class="select" name="select" id="">
+                        <option value="">Type of food: </option>
+                        <option value="Fruit and vegetables">Fruit and vegetables</option>
+                        <option value="Starchy food">Starchy food</option>
+                        <option value="Dairy">Dairy</option>
+                        <option value="Protein">Protein</option>
+                        <option value="Fat">Fat</option>
+                    </select> <br />
+                    <br />
+                    <button class="button" type="submit">Submit</button>
+                </form>
+            </div>
+           
+        </div>
+        <div id="render">
+
+        </div>
+    </main>
+   
+    <footer>
+        <div class="icons">
+            <li><a href="https://www.facebook.com/"><img
+                        src="https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png" alt="facebook"
+                        style="width:50px;height:50px;">
+                </a></li>
+            <li><a href="https://www.instagram.com/"><img
+                        src="https://cdn3.iconfinder.com/data/icons/glypho-free/64/logo-instagram-512.png"
+                        alt="instagram" style="width:60px;height:60px;">
+                </a></li>
+            <li><a href="https://twitter.com/"><img
+                        src="https://icon-library.com/images/twitter-icon-png-transparent/twitter-icon-png-transparent-13.jpg"
+                        alt="twitter" style="width:45px;height:45px;">
+                </a></li>
+            <li><a href="https://jo.linkedin.com/"><img
+                        src="https://www.shareicon.net/data/512x512/2015/09/03/95349_linkedin_512x512.png"
+                        alt="linkedin" style="width:50px;height:50px;">
+                </a></li>
+
+        </div>
+        <p>
+            Copyrights@UI-UX designer
+        </p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
