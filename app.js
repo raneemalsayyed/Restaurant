@@ -11,12 +11,15 @@ main.style.fontFamily ='Poppins'
 let body =document.getElementsByTagName ("body")[0];
 body.style.backgroundColor ='#EDF1D6'
 
+let i= 0
+
 const allFood = [];
 function Food(name, type, price) {
     this.foodId = '';
     this.foodName = name;
     this.foodType = type;
     this.price = price;
+    this.id  =++i
 
     allFood.push(this);
 }
@@ -35,9 +38,13 @@ Food.prototype.renderFoodInformation = function () {
     bodyrow.style.gap ='10px'
 
 
-    let foodId = document.createElement("td");
-    foodId.textContent = `${this.foodId}`;
-    bodyrow.appendChild(foodId);
+    // let foodId = document.createElement("td");
+    // foodId.textContent = `${this.foodId}`;
+    // bodyrow.appendChild(foodId);
+
+    let id = document.createElement("td");
+    id.textContent = `${this.id}`;
+    bodyrow.appendChild(id);
 
     let foodName = document.createElement("td");
     foodName.textContent = ` ${this.foodName}`;
@@ -52,7 +59,7 @@ Food.prototype.renderFoodInformation = function () {
     price.textContent = `${this.price}`;
     bodyrow.appendChild(price);
 
-foodId.style.width='70px'
+id.style.width='70px'
 foodName.style.width='70px'
 foodType.style.width='200px'
 price.style.width='70px'
